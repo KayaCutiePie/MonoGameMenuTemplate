@@ -60,6 +60,8 @@ namespace MenuTool
                     return Game1.equipmentButtonTextures;
                 case "Shop":
                     return Game1.shopButtonTextures;
+                case "Options":
+                    return Game1.optionsButtonTextures;
                 default:
                     drawLabels = true;
                     return Game1.testMenuTextures;

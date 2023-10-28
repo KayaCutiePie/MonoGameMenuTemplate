@@ -22,5 +22,20 @@ namespace MenuTool
                 return false;
             }
         }
+
+        static public bool RectangleIsInRectangle(Primitive obj1, Primitive obj2)
+        {
+            var rectangle1 = new Vector4(obj1.position.X, obj1.position.Y, obj1.position.X + obj1.width, obj1.position.Y + obj1.height);
+            var rectangle2 = new Vector4(obj2.position.X, obj2.position.Y, obj2.position.X + obj2.width, obj2.position.Y + obj2.height);
+
+            if (rectangle2.Y >= rectangle1.W && rectangle2.W <= rectangle1.Y && rectangle2.Z >= rectangle1.X && rectangle2.X <= rectangle1.Z)       
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

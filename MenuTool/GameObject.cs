@@ -26,6 +26,10 @@ namespace MenuTool
             {
                 _spriteBatch.DrawString(Game1.infinium, text, position, Color.Red, rotation, new Vector2(0, 0), 1, SpriteEffects.None, layerDepth);
             }
+            else if (this.GetType() == typeof(Primitive))
+            {
+
+            }
             else
             {
                 _spriteBatch.Draw(
